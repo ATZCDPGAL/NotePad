@@ -57,5 +57,94 @@ namespace NotePad
             File.WriteAllText(sfd.FileName,richTextBox1.Text);
             MessageBox.Show("Archivo de texto guardado exitosamente.");
         }
+
+        private void rojoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarColor();
+            richTextBox1.ForeColor = Color.Red;
+            rojoToolStripMenuItem.Checked = true;
+        }
+
+        private void verdeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarColor();
+            richTextBox1.ForeColor = Color.Green;
+            verdeToolStripMenuItem.Checked = true;
+        }
+
+        private void azulToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarColor();
+            richTextBox1.ForeColor = Color.Blue;
+            azulToolStripMenuItem.Checked = true;
+        }
+
+        private void naranjaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarColor();
+            richTextBox1.ForeColor = Color.Orange;
+            naranjaToolStripMenuItem.Checked = true;
+        }
+
+        private void aquaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarColor();
+            richTextBox1.ForeColor = Color.Aqua;
+            aquaToolStripMenuItem.Checked = true;
+        }
+
+        private void negroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarColor();
+            richTextBox1.ForeColor = Color.Black;
+            negroToolStripMenuItem.Checked = true;  
+        }
+
+        private void amarilloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarColor();
+            richTextBox1.ForeColor= Color.Yellow;
+            amarilloToolStripMenuItem.Checked = true;   
+        }
+
+        private void borrarColor()
+        {
+            rojoToolStripMenuItem.Checked = false;
+            verdeToolStripMenuItem.Checked= false;
+            azulToolStripMenuItem.Checked = false;
+            naranjaToolStripMenuItem.Checked = false;
+            negroToolStripMenuItem.Checked = false;
+            amarilloToolStripMenuItem.Checked = false;
+            aquaToolStripMenuItem.Checked = false;
+            blancoToolStripMenuItem.Checked = false;
+            negroToolStripMenuItem1.Checked = false;
+            azulToolStripMenuItem1.Checked = false;
+        }
+
+        private void negroToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            borrarColor();
+            richTextBox1.BackColor = Color.Black;
+            negroToolStripMenuItem1.Checked = true;
+        }
+
+        private void azulToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            borrarColor();
+            richTextBox1.BackColor = Color.Blue;
+            azulToolStripMenuItem1.Checked = true;
+        }
+
+        private void blancoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrarColor();
+            richTextBox1.BackColor = Color.White;
+            blancoToolStripMenuItem.Checked = true;
+        }
+
+        private void limpiarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Clear();
+        }
     }
 }
