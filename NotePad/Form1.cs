@@ -146,5 +146,15 @@ namespace NotePad
         {
             richTextBox1.Clear();
         }
+
+        private void zoomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.ZoomFactor = 2;
+        }
+
+        private void zoomToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            richTextBox1.ZoomFactor = 1;
+        }
     }
 }
