@@ -126,8 +126,9 @@
             // fuenteToolStripMenuItem
             // 
             this.fuenteToolStripMenuItem.Name = "fuenteToolStripMenuItem";
-            this.fuenteToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.fuenteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fuenteToolStripMenuItem.Text = "Fuente";
+            this.fuenteToolStripMenuItem.Click += new System.EventHandler(this.fuenteToolStripMenuItem_Click);
             // 
             // colorDeTextoToolStripMenuItem
             // 
@@ -140,7 +141,7 @@
             this.negroToolStripMenuItem,
             this.amarilloToolStripMenuItem});
             this.colorDeTextoToolStripMenuItem.Name = "colorDeTextoToolStripMenuItem";
-            this.colorDeTextoToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.colorDeTextoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.colorDeTextoToolStripMenuItem.Text = "Color de texto";
             // 
             // rojoToolStripMenuItem
@@ -199,7 +200,7 @@
             this.azulToolStripMenuItem1,
             this.blancoToolStripMenuItem});
             this.colorDeFondoToolStripMenuItem.Name = "colorDeFondoToolStripMenuItem";
-            this.colorDeFondoToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.colorDeFondoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.colorDeFondoToolStripMenuItem.Text = "Color de fondo ";
             // 
             // negroToolStripMenuItem1

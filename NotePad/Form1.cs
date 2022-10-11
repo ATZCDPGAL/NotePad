@@ -149,12 +149,40 @@ namespace NotePad
 
         private void zoomToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            richTextBox1.ZoomFactor = 2;
+            float currentSize;
+            currentSize = richTextBox1.Font.Size;
+            currentSize += 2.0F;
+            if(currentSize <= 2)
+            {
+                currentSize = 21;
+            }
+            else
+            {
+                richTextBox1.Font = new Font(richTextBox1.Font.Name, currentSize,
+                            richTextBox1.Font.Style, richTextBox1.Font.Unit);
+            }
         }
 
         private void zoomToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            richTextBox1.ZoomFactor = 1;
+            float currentSize;
+            currentSize = richTextBox1.Font.Size;
+            currentSize -= 2.0F;
+            richTextBox1.Font = new Font(richTextBox1.Font.Name, currentSize,
+                            richTextBox1.Font.Style, richTextBox1.Font.Unit);
+        }
+
+        private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FontDialog dlg = new FontDialog();
+            if(dlg.ShowDialog() == DialogResult.OK)
+            {
+                string fontName;
+                float fontSize;
+                fontName = dlg.Font.Name;
+                fontSize = dlg.Font.Size;
+                richTextBox1.Font = dlg.Font;
+            }
         }
     }
 }
